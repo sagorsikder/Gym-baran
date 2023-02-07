@@ -2,13 +2,13 @@
 const Header = () => {
 
     const menulist = <> 
-        <li>Home</li>
-        <li>Program</li>
-        <li>Blog</li>
-        <li>About us</li>
+        <li className="mr-[43px]">Home</li>
+        <li className="mr-[43px]">Program</li>
+        <li className="mr-[43px]">Blog</li>
+        <li className="mr-[43px]">About us</li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar mt-[10px] w-[90%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,7 +18,7 @@ const Header = () => {
               {menulist}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="btn btn-ghost normal-case text-xl"><span className="bg-blue-500 rounded-[10px] mr-2 p-1 text-white">Gym</span> <span className="text-blue-500">baran</span></a>
          
         </div>
         <div className="navbar-end hidden  lg:flex">
@@ -26,7 +26,7 @@ const Header = () => {
             {menulist}
           </ul>
         
-          <button className="btn btn-primary">Login</button>
+          <button className="btn bg-[#264373]  capitalize text-[16px] h-[50px] w-[114px]">Log in</button>
         </div>
     
       </div>
